@@ -1,6 +1,6 @@
 # `flagtail.js`
 
-## What is `flagtail`
+## 🎯 What is `flagtail`
 
 #### A Javascript Library that facilitates DOM manipulation and API data integration
  - DOM Handling
@@ -15,25 +15,39 @@
 
 <br><br><br><br><br>
 
-## Getting Started
+## :flight_departure: Getting Started
 
 ### 🏗️ Under Construction 工事中
 
 <br><br><br><br><br>
 
-## API Documentation
+## 	:scroll: API Documentation
 
 ### 🏗️ Under Construction 工事中
 
 <br><br><br><br><br>
 
-## Convention
+## ⚔️ Convention
 
 ### `Commit`
 
-follow this site https://udacity.github.io/git-styleguide/ as far as possible
+Follow this site https://udacity.github.io/git-styleguide/ as far as possible
+
+<br><br>
+
+### `Pull Request`
+
+#### - Please include the contents below at least
+
+##### 1. `Title`
+
+Short informative summary of the pull request
+
+ - format: {type}: {Subject}
+
+    - the type and subject should follow this site https://udacity.github.io/git-styleguide/
 
 <br><br><br><br><br>
 
-## License
+## ⭐ License
  - [MIT](./LICENSE)
