@@ -12,6 +12,7 @@
  - Easy and Simple
  - A Fast Learning-curve
  - Vanilla JavaScript
+ - Stand-alone HTML file
 
 <br><br><br><br><br>
 
@@ -20,7 +21,7 @@
 ### 🏗️ Under Construction 工事中
 
 <br><br><br><br><br>
-
+ 
 ## 	:scroll: API Documentation
 
 ### 🏗️ Under Construction 工事中

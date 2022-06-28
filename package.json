@@ -1,0 +1,32 @@
+{
+  "name": "flagtail",
+  "version": "0.0.0",
+  "description": "A Javascript Library that facilitates DOM manipulation and API data integration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flagtail/flagtail-js.git"
+  },
+  "keywords": [
+    "DOM",
+    "browser",
+    "web",
+    "API",
+    "fetch",
+    "client",
+    "functional",
+    "stream",
+    "publish",
+    "subscriber",
+    "pub/sub"
+  ],
+  "author": "rhie-coder",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flagtail/flagtail-js/issues"
+  },
+  "homepage": "https://github.com/flagtail/flagtail-js#readme"
+}
