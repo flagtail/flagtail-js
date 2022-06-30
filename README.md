@@ -16,6 +16,12 @@
 
 <br><br><br><br><br>
 
+## 	:jigsaw: Structure
+
+![flagfish-overview](./docs/assets/flagfish-overview.png)
+
+<br><br><br><br><br>
+
 ## :flight_departure: Getting Started
 
 ### 🏗️ Under Construction 工事中

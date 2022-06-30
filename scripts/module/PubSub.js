@@ -7,6 +7,7 @@ class Publisher {
     #data; // data collection to handle produced data and consumed data
     #reqReady;
 
+
     constructor(id) {
         this.#id = id;
         this.#data = new Map();
@@ -67,7 +68,6 @@ class Publisher {
 
         for(const requester of this.#reqReady) {
             this.#data.set(requester.dataIdKey, await requester.resDataFunc())
-            console.log("async requesting") //test
         }
 
         return this;

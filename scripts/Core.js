@@ -16,6 +16,8 @@ class Core {
     static #instance; // singleton instance
     static ctx = Context; // class<Context>
 
+    
+
     constructor() {
         if (Core.#instance) return Core.#instance;
         Core.#instance = this;
