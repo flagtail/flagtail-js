@@ -1,2 +1,2 @@
-import {Core as flagfish} from "./scripts/Core.js"
+import {Core as flagfish} from "./lib/Core.js"
 export default flagfish;

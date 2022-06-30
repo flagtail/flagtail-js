@@ -1,4 +1,4 @@
-import flagfish from "../../index.js";
+import flagfish from "../../lib/index.js";
 
 (async () => {
     const ff = new flagfish();
