@@ -1,35 +1,10 @@
-async function wait(n) {
-    const waitResult = await new Promise((resolve) => {
-        setTimeout(() => {
-            console.log("wait...")
-            resolve(n);
-        }, 2000)
-    });
+const arr = [1, 2, 3, 4, 5]
 
-    return waitResult
+function cb(element, index, array){
+    console.log(`${element}, ${index}, ${array}`)
+    array[index]= element * index;
 }
 
-async function a1() {
-    return await wait(11);
-}
+arr.forEach(cb)
 
-async function a2() {
-    return await wait(12);
-}
-async function a3() {
-    return await wait(13);
-}
-async function a4() {
-    return await wait(14);
-}
-async function a5() {
-    return await wait(15);
-}
-
-async function main() {
-    const list = await Promise.all([a1(), a2(), a3(), a4(), a5()])
-
-    console.log(list);
-}
-
-main();
+console.log(arr)

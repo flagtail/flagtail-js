@@ -10,6 +10,13 @@ import flagfish from "../../index.js";
                 console.log(data.children[0]);
                 return data.children[0]
             }
+        },
+        {
+            target: "#id-input", callback: function(data) {
+                console.log("#id-input will be occur error");
+                console.log(data.value);
+                return data
+            }
         }
     ]
 
