@@ -1,4 +1,4 @@
-import flagfish from "../../index.js";
+import flagtail from "../../index.js";
 
 const select$$ = [
     "#id-input", 
@@ -12,7 +12,7 @@ const select$$ = [
 ];
 
 (async () => {
-    const ff = new flagfish();
+    const ff = new flagtail();
 
     const filters = [
         {
@@ -36,9 +36,34 @@ const select$$ = [
         .elem(...select$$)
         .filter(filters)
         .done()
+    
+    function AAA(){
+        this.data = function(){
+            console.log("hello world");
+        }
+    }
 
-    const consumer = ff.consume(test);
+    
+    
 
-    console.log(test.getData());
+
+
+   /*  const wrapper = {
+        val(){
+            return this.value;
+        },
+        text(){
+            return this.textContext;
+        },
+        attr(attrName){
+            return this.getAttribute(attrName);
+        }
+    }
+    
+    const $idInput = document.getElementById("id-input")
+    
+    const result = wrapper.val.call($idInput)
+    console.log(result); */
+
 })()
 
