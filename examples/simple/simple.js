@@ -28,16 +28,25 @@ const select$$ = [
         }
     ]
 
-    const test = await ft.produce("test")
+    const prod_A = ft.produce("A")
         .api("test-json", { origin: "https://jsonplaceholder.typicode.com/todos" })
+        .elem(...select$$)
+        .filter(filters)
+
+    const prod_B = await ft.produce("B")
         .api("test-json-1", { origin: "https://jsonplaceholder.typicode.com/todos/1" })
         .api("test-json-2", { origin: "https://jsonplaceholder.typicode.com/todos/2" })
         .api("test-json-3", { origin: "https://jsonplaceholder.typicode.com/todos/3" })
         .elem(...select$$)
         .filter(filters)
-        .done()
+
+    await prod_A.done();
+    await prod_B.done();
+
+    console.log(prod_A.getData())
         
-    ft.consume(test).from("test")
+    ft.consume(prod_A, prod_B)
+        .from("test")
 
     
    /*  
