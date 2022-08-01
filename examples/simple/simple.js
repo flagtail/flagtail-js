@@ -12,6 +12,7 @@ const select$$ = [
 ];
 
 (async () => {
+
     const ft = new flagtail();
 
     const filters = [
@@ -33,7 +34,7 @@ const select$$ = [
         .elem(...select$$)
         .filter(filters)
 
-    const prod_B = await ft.produce("B")
+    const prod_B = ft.produce("B")
         .api("test-json-1", { origin: "https://jsonplaceholder.typicode.com/todos/1" })
         .api("test-json-2", { origin: "https://jsonplaceholder.typicode.com/todos/2" })
         .api("test-json-3", { origin: "https://jsonplaceholder.typicode.com/todos/3" })
